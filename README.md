@@ -34,28 +34,38 @@
 
 ### Wie arbeitet man mit dem main/master branch?
 
-## Git Befehle
+## Git Befehle - von Bardia Azmoun
 
 ### Lokales Repository
 
 #### git init
+> 
 
 #### git add
+> Verschiebt Änderungen aus dem Arbeitsverzeichnis in die Staging-Area, bevor man sie in den offiziellen Verlauf committet.
+
+> 28.02.2024
 
 #### git commit
+> 
 
 #### git status
+> 
 
 #### git ...
 
 ### Remote Repositories
 
 #### git push
+> 
 
 #### git pull
+> 
 
 #### git clone
+> 
 
 #### git remote
+> 
 
 #### git ...

@@ -29,23 +29,25 @@
 
 ### GitHub
 
-## Best-Praxises - von Weiting
+## Best-Praxises - von Weiting Zhou
 > 1*1 wann man was machen sollst.
 
-28.02.24
+> 28.02.24
 
-### Wann sollte man commiten?
+### Wann sollte man commiten? - von Weiting Zhou
 > Man sollte am besten nach jeder Teilaufgabe, die man Aufgestellt hat, einmal nach der Fertigstellung Committen um die Änderung zu speichern und ggf. Rückgängig zu machen.
 
-28.02.24
+> 28.02.24
 
-### Wann und wofür sollten neue Branches erstellt werden?
+### Wann und wofür sollten neue Branches erstellt werden? - von Weiting Zhou
 > Man sollte einen neuen Branch erstellen, wenn z.B. eine weitere Person am Projekt arbeitet oder man den Projekt in verschiedenen Teilaufgaben aufteilt.
 
-28.02.24
+> 28.02.24
 
-### Wann sollte gepusht und gemergt werden?
+### Wann sollte gepusht und gemergt werden? - von Weiting Zhou
 > Man sollte Grundsätzlich nach jeden Commit einmal pushen um die Änderung extern zu haben und man sollte nach jeder Fertiggestellter Teilaufgabe, einma, seine änderungen in mit den master mergen.
+
+> 28.02.2024
 
 ### Wie arbeitet man mit dem main/master branch?
 

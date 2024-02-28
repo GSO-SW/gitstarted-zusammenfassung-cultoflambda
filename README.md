@@ -24,13 +24,16 @@
 
 ## Was sind Remote-Repositoris und wie funktionieren sie?
 ### Remote Reositories
+> Remote-Repositoris sind Repositoris die nochmal extern auf einen Server gespeichert sind.
+
+> 28.02.24
 
 ### Origin
 
 ### GitHub
 
-## Best-Praxises - von Weiting Zhou
-> 1*1 wann man was machen sollst.
+## Best-Practices - von Weiting Zhou
+> Grundregeln wie man mit einer Repository arbeiten soll um einen möglichs Übersichtlichen und stabile main/master branch zu haben.
 
 > 28.02.24
 
@@ -45,11 +48,14 @@
 > 28.02.24
 
 ### Wann sollte gepusht und gemergt werden? - von Weiting Zhou
-> Man sollte Grundsätzlich nach jeden Commit einmal pushen um die Änderung extern zu haben und man sollte nach jeder Fertiggestellter Teilaufgabe, einma, seine änderungen in mit den master mergen.
+> Man sollte Grundsätzlich nach jeden Commit einmal pushen um die Änderung extern zu haben und man sollte nach jeder Fertiggestellter Teilaufgabe, einmal seine Änderungen mit den main/master mergen.
 
 > 28.02.2024
 
-### Wie arbeitet man mit dem main/master branch?
+### Wie arbeitet man mit dem main/master branch? - von Weiting Zhou
+> Im main/master branch sollte man grundsätzlich nur Fertige Teilaufgaben hinzufügen, damit der main/master sauber und stabil läuft
+
+> 28.02.2024
 
 ## Git Befehle
 

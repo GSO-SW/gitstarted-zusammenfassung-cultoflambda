@@ -15,9 +15,9 @@
 > 28.02.2024
 
 ### GitHub - Von Felix Andreas Assert
-> GitHub ist ein Online-service Anbieter, der Server für Versionskontrollsystem anbietet. GitHub wird benutz als ein Tool um das Bearbeiten von Programmen in Teams einfacher zu gestalten und Programmieren ein sogenantes "Repository" als allgemeinen Speicherort für ihre Projekte zu geben.
+> GitHub ist ein Online-service Anbieter, der Server für Versionskontrollsystem anbietet. GitHub wird benutz als ein Tool um das Bearbeiten von Programmen in Teams einfacher zu gestalten und Programmieren ein sogenantes "Repository" als allgemeinen Speicherort für ihre Projekte zu geben. 
 
-> Änderungen vom 28. Februar, 2024
+> Änderungen vom 4. März, 2024
 
 ## Wie funktioniert Git?
 
@@ -37,7 +37,11 @@
 
 ### Origin
 
-### GitHub als Remote Repository
+### GitHub als Remote Repository - Von Felix Andreas Assert
+
+> GitHub ist ein Online-Service, welcher für Personen oder Gruppierungen Remote Repositorys über ihre eigenen Server zu verfügung stellt. Die GitHub Server sind innerhalb des Netzwerkes addressierbar, was Menschen - zum größtenteil Entwicklern - die Möglichkeit bietet ihre Lokalen Repositories ins Internet zu bringen und als Remote Repository zu benutzen.
+
+> Änderungen vom 4. März, 2024
 
 ## Best-Practices - von Weiting Zhou
 > Grundregeln wie man mit einer Repository arbeiten soll um einen möglichs Übersichtlichen und stabile main/master branch zu haben.

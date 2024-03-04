@@ -85,9 +85,15 @@
 ### Remote Repositories
 
 #### git fetch
+<<<<<<< HEAD
 > Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.
 
 > 04.03.2024
+=======
+> >Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.
+
+> 04.02.2024
+>>>>>>> db8e3bc402a82cf8c2e751f18be35c279aad9472
 
 #### git push
 > Mit diesem Befehl kann man einen lokalen Branch in ein anderes Repository verschieben.

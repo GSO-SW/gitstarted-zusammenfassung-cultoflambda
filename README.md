@@ -73,7 +73,9 @@
 ### Lokales Repository
 
 #### git init
-> 
+> Initialisiert ein neues Git-Repository.
+
+> 04.03.2024
 
 #### git add
 > Verschiebt Änderungen aus dem Arbeitsverzeichnis in die Staging-Area, bevor man sie in den offiziellen Verlauf committet.
@@ -84,22 +86,32 @@
 > 
 
 #### git status
-> 
+> Gibt den Status des Arbeitsverzeichnisses und der Staging-Area zurück.
 
-#### git ...
+> 04.03.2024
 
 ### Remote Repositories
 
+#### git fetch
+> Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.
+
+> 04.03.2024
+
 #### git push
-> 
+> Mit diesem Befehl kann man einen lokalen Branch in ein anderes Repository verschieben.
+
+> 04.03.2024
 
 #### git pull
-> 
+> Pulls sind die automatisierte Version von git fetch. Dabei wird ein Branch von einem Remote-Repository heruntergeladen und dann direkt in den aktuellen Branch gemergt.
+
+> 04.03.2024
 
 #### git clone
-> 
+> Erstellt eine Kopie eines bestehenden Git-Repositorys.
+
+> 04.03.2024
 
 #### git remote
 > 
 
-#### git ...

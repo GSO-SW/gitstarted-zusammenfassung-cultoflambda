@@ -9,7 +9,6 @@
 
 > 28.02.2024
 
-<<<<<<< Updated upstream
 #### Git - von Paul von Napolski
 > Das aktuell beliebteste Versionskontrollsystem ist **Git**. Git ist mittlerweile fast schon zum Standart-Versionskontrollsystem für Entwickler geworden; die meisten modernen Entwicklungsumgebungen wie VisualStudio oder IntelliJ unterstüzen die Versionierung mit Git. Entwickelt wurde Git [2005](https://de.wikipedia.org/wiki/Git) von Linus Torvalds, als Ersatz für die kostenpflichtige BitKeeper Software.
 
@@ -19,8 +18,6 @@
 > GitHub ist ein Online-service Anbieter, der Server für Versionskontrollsystem anbietet. GitHub wird benutz als ein Tool um das Bearbeiten von Programmen in Teams einfacher zu gestalten und Programmieren ein sogenantes "Repository" als allgemeinen Speicherort für ihre Projekte zu geben. 
 
 > Änderungen vom 4. März, 2024
-=======
-### GitHub - von Patrick Scheuer
 
 ## Wie funktioniert Git? - von Patrick Scheuer
 > Wenn man mit Git arbeitet, kommt man an denn folgenden drei Begriffen nicht vorbei: Das Working Directory, die Staging Area und das Repository.
@@ -31,9 +28,7 @@ Zwischenschritt vor dem Commit.
 Das Repository kann daher als das Endergebnis betrachtet werden, wo alle Commits und Historien der Projekte hinterlegt werden. Das Repository wird mit einer
 versteckten .git-Datei gekennzeichnet.
 
->04.03.2024
->>>>>>> Stashed changes
-
+> 04.03.2024
 
 ### Commits
 

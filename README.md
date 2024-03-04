@@ -25,15 +25,16 @@
 
 ### Branches und HEAD
 
-## Was sind Remote-Repositoris und wie funktionieren sie?
-### Remote Reositories
-> Remote-Repositoris sind Repositoris die nochmal extern auf einen Server gespeichert sind.
+## Was sind Remote-Repositoris und wie funktionieren sie? - von Paul von Napolski
+> Remote Repositories sind andere Versionen des eigenen Repositories, die sich an einem anderen Ort befinden. Das kannn einfach ein anderer Ordner auf demselben Gerät sein, meistens wird man Remote Repositories jedoch auf anderen Geräten, häufig auch einem dedierten Server, antreffen.
 
-> 28.02.24
+> 04.03.2024
+
+### Remote Branches
 
 ### Origin
 
-### GitHub
+### GitHub als Remote Repository
 
 ## Best-Practices - von Weiting Zhou
 > Grundregeln wie man mit einer Repository arbeiten soll um einen möglichs Übersichtlichen und stabile main/master branch zu haben.

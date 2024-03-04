@@ -25,11 +25,15 @@
 
 ### Branches und HEAD
 
-## Was sind Remote-Repositoris und wie funktionieren sie?
-### Remote Reositories
-> Remote-Repositoris sind Repositoris die nochmal extern auf einen Server gespeichert sind.
+## Was sind Remote-Repositoris und wie funktionieren sie? - von Paul von Napolski
+> Remote Repositories sind andere Versionen des eigenen Repositories, die sich an einem anderen Ort befinden. Das kannn einfach ein anderer Ordner auf demselben Gerät sein, meistens wird man Remote Repositories jedoch auf anderen Geräten, häufig auch einem dedizierten Server, antreffen.
 
-> 28.02.24
+> 04.03.2024
+
+### Remote Branches - von Paul von Napolski
+> Ein Remote Branch ist im Grunde erstmal nichts weiteres, als ein Branch in einem Remote Repository. Wenn das lokale Repository mit einem Remote Repository verbunden ist, speichert Git *Referenzen*, in diesem Fall Links, in dem Ordner *'refs/'*. Um den Remote Branch jetzt meit einem lokalen Branch zu verbinden, wird der Befehl ```git --set-upstream [RemoteRepoName] [RemoteBranchName]```. Wenn ein Remote Branch auf diese Weise mit einem lokalen Branch verbunden ist, wird als *Upstream Branch* bezeichnet.
+
+> 04.03.2024
 
 ### Origin
 

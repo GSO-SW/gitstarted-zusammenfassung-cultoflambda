@@ -19,7 +19,16 @@
 
 > Änderungen vom 4. März, 2024
 
-## Wie funktioniert Git?
+## Wie funktioniert Git? - von Patrick Scheuer
+> Wenn man mit Git arbeitet, kommt man an denn folgenden drei Begriffen nicht vorbei: Das Working Directory, die Staging Area und das Repository.
+Das Working Directory dient als eine Art Aufnahme der Dateien und Ordner, welchen man Git erlaubt zu tracken und dessen Versionen zu kontrollieren. Dort sind also die
+Daten untergebracht, mit welchen gearbeitet werden sollen.
+Die Staging Area kann als ein temporärer Platz für ausgewählte Dateien gesehen werden, dessen Änderungen man im nächsten Schritt comitten möchte. Es ist also ein
+Zwischenschritt vor dem Commit.
+Das Repository kann daher als das Endergebnis betrachtet werden, wo alle Commits und Historien der Projekte hinterlegt werden. Das Repository wird mit einer
+versteckten .git-Datei gekennzeichnet.
+
+> 04.03.2024
 
 ### Commits
 

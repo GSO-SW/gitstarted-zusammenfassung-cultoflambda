@@ -10,9 +10,9 @@
 > 28.02.2024
 
 #### Git - von Paul von Napolski
-> Das aktuell beliebteste Versionskontrollsystem ist **Git**. Git ist mittlerweile fast schon zum Standart-Versionskontrollsystem für Entwickler geworden; die meisten modernen Entwicklungsumgebungen wie VisualStudio oder IntelliJ unterstüzen die Versionierung mit Git. Entwickelt wurde Git [2005](https://de.wikipedia.org/wiki/Git) von Linus Torvalds, als Ersatz für die kostenpflichtige BitKeeper Software.
+> Das aktuell beliebteste Versionskontrollsystem ist **Git**. Git ist mittlerweile fast schon zum Standart-Versionskontrollsystem für Entwickler geworden; die meisten modernen Entwicklungsumgebungen wie VisualStudio oder IntelliJ unterstüzen die Versionierung mit Git. Entwickelt wurde Git [2005](https://de.wikipedia.org/wiki/Git) von Linus Torvalds, als Ersatz für die kostenpflichtige BitKeeper Software. Git gehört zu den *dezentralen Versionskontrollsystemen*.
 
-> 28.02.2024
+> 04.03.2024
 
 ### GitHub - Von Felix Andreas Assert
 > GitHub ist ein Online-service Anbieter, der Server für Versionskontrollsystem anbietet. GitHub wird benutz als ein Tool um das Bearbeiten von Programmen in Teams einfacher zu gestalten und Programmieren ein sogenantes "Repository" als allgemeinen Speicherort für ihre Projekte zu geben. 
@@ -29,6 +29,16 @@ Das Repository kann daher als das Endergebnis betrachtet werden, wo alle Commits
 versteckten .git-Datei gekennzeichnet.
 
 > 04.03.2024
+
+## Wie funktioniert Git? (Alternative Beschreibung) - von Paul von Napolski
+> Um Git zu benutzen, muss zuerst ein sogenanntes *Repository* mit dem Befehl ```git init [Name]```angelegt werden. Dieser Befehl *merkiert* einen Ordner sozusagen als Git-Repository, durch das erstellen eines Ordners *.git/*. Dieser Ordner enthält alle für Git relevanten Dateien, wie z.B. *refs/* (siehe [Remote Branches](#remote-branches---von-paul-von-napolski)). In jedem Git Repository gibt es drei Bereiche - den *Working Tree*, die *Staging Area* und das *Repository*.
+> 
+> Der **Working Tree** ist der Bereich, in dem gearbeitet wird. Er enthält alle Dateien in ihrem aktuellen ZUstand. Änderungen im Working Tree können *gestaged* werden, um sie dann zu *commiten*. Dadurch werden sie dem Repository hinzugefügt.
+> 
+> Die **Staging Area** enthält alle *gestageten* Änderungen, dass Änderungen, die markiert wurden, um sie später zu commiten.
+> 
+> Das **Repository** enthält alle bereits committeten Änderungen. Diese werden jeweils als eigenständige [*Commits*](#commits) gespeichert, die jeweils nur ihre entsprechenden Änderungen enthalten.
+
 
 ### Commits
 

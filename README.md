@@ -112,7 +112,10 @@ versteckten .git-Datei gekennzeichnet.
 
 > 04.03.2024
 
-### Origin
+### Origin - von Patrick Scheuer
+> Die Origin beschreibt den Namen für ein remote Repository, welches ein dazugehöriges lokales Repository hat, aus welchem geklont wurde. Ebenso haben die Branches eigene Origins im remote Repository, welche auf das Lokale zurückgreifen. Beispielweise ist o/master der remote Branch vom lokalen Branch "master". Das "o" steht dbei für "origin".
+
+> 11.03.2024
 
 ### GitHub als Remote Repository - Von Felix Andreas Assert
 

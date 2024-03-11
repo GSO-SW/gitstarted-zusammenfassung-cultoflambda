@@ -95,7 +95,10 @@ versteckten .git-Datei gekennzeichnet.
 
 > 11.03.2024
 
-### Commits als Wiederherstellungspunkte
+### Commits als Wiederherstellungspunkte - von Patrick Scheuer
+> Commits dienen nicht nur als Snapshots deines bisherigen Fortschrittes im Projekt, sondern können auch genutzt werden, um dein Projekt auf einen früheren Zeitraum wiederherzustellen. Stellen wir uns mal vor, du hast die letzten 3 Commits "verkackt" und möchtest auf den Zustand eines anderes Commits zurückkehren. Zunächst lässt du dir den kompletten Verlauf aller Commits mit dem Befehl "git log" anzeigen. Hier suchst du nach dem Commit, zu welchenm du zurückkehren möchtest du kopierst den Hashwert. Darauf kannst du das Projekt zu diesem Commit reseten, indem du "git reset <hashwert>" in die Konsole eingibst. Dabei gibt es noch eine Sache zu beachten. der "git reset" Command hat drei verschiedene Parameter: soft, mixed und hard. Der Defaultwert ist mixed, was bedeutet, dass die letzten Commits nicht entgültig gelöscht werden, sondern die Änderungen weiterhin in den Dateien und der Staging Area bestehend bleiben. Mit "git reset --soft" bleibt ebenfalls alles unverändert und man müsste nur neu commiten, was praktisch ist, wenn man nur die Nachricht des Commites ändern möchte. In unserem Bespiel möchten wir mit "git reset --hard" gehen, was alle Änderungen entgültig löscht. Es ist, wie es im Namen steckt, ein Hardreset. Mit dieser Methode befindet sich das Projekt auf den Zustand, zu welchem man zurücksetzen möchte.
+
+> 11.03.2024
 
 ## Was sind Remote-Repositoris und wie funktionieren sie? - von Paul von Napolski
 > Remote Repositories sind andere Versionen des eigenen Repositories, die sich an einem anderen Ort befinden. Das kannn einfach ein anderer Ordner auf demselben Gerät sein, meistens wird man Remote Repositories jedoch auf anderen Geräten, häufig auch einem dedizierten Server, antreffen.

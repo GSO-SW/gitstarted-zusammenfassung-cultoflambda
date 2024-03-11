@@ -76,7 +76,12 @@ versteckten .git-Datei gekennzeichnet.
 ### Commits - von Paul von Napolski
 > Commits sind sozusagen gespeicherte *Zustände* oder *Versionen* des Repositorys. Sie enthalten alle gespeicherten Änderungen, basierend auf ihrem jeweiligen *Vorgänger-Commit*. Das heißt, wenn z.B. die Datei README<span>.md</span> geändert wird, und diese Änderung dann gespeichert - *committet* - wird, dann enthält dieser Commit alle Änderungen an der Datei README<span>.md</span> seit dem letzten Commit. Zusätzlich verweist jeder Commit auf seine jeweiligen Vorgänger-Commits. Meistens hat ein Commit genau einen Vorgänger, [*Merge-Commits*](#merging) beispielsweise können jedoch auch mehrere Vorgänger haben. Des weiteren dient jeder Commit auch als [Wiederherstellungspunkt](#commits-als-wiederherstellungspunkte). Das heißt, dass Branches und HEAD jederzeit auf den Stand eines bestimmten Commits zurückgesetzt werden können.
 
+
+### Commits (Alternative Beschreibung) - von Patrick Scheuer
+> Commits können als Snapshots oder Checkpoints deines Projektes angesehen werden. Es ist grob gesagt eine Version in deinem Repository, also eine Kopie über die zum Zeitpunkt aufgenommene Dateien im Projekt. Man kann es auch als Fortschritte sehen, welche in einem Projekt erzielt und aufgezeichnet wurden. Auf diese kann man auch immer zugreifen, indem man mit "git checkout" zu dem jeweilien Commit auscheckt.
+
 > 11.03.2024
+
 
 ### Branches und HEAD
 

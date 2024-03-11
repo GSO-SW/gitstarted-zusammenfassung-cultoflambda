@@ -1,6 +1,38 @@
 # Richtiges Arbeiten mit Git und GitHub
 
 ## Inhalt
+  - [Was sind Git und GitHub und wofür werden die Systeme verwendet?](#was-sind-git-und-github-und-wofür-werden-die-systeme-verwendet)
+    - [Versionskontrollsysteme - von Paul von Napolski](#versionskontrollsysteme---von-paul-von-napolski)
+      - [Git - von Paul von Napolski](#git---von-paul-von-napolski)
+    - [GitHub - Von Felix Andreas Assert](#github---von-felix-andreas-assert)
+  - [Wie funktioniert Git? - von Patrick Scheuer](#wie-funktioniert-git---von-patrick-scheuer)
+  - [Wie funktioniert Git? (Alternative Beschreibung) - von Paul von Napolski](#wie-funktioniert-git-alternative-beschreibung---von-paul-von-napolski)
+    - [Commits - von Paul von Napolski](#commits---von-paul-von-napolski)
+    - [Branches und HEAD](#branches-und-head)
+    - [Merge und Rebase](#merge-und-rebase)
+    - [Commits als Wiederherstellungspunkte](#commits-als-wiederherstellungspunkte)
+  - [Was sind Remote-Repositoris und wie funktionieren sie? - von Paul von Napolski](#was-sind-remote-repositoris-und-wie-funktionieren-sie---von-paul-von-napolski)
+    - [Remote Branches - von Paul von Napolski](#remote-branches---von-paul-von-napolski)
+    - [Origin](#origin)
+    - [GitHub als Remote Repository - Von Felix Andreas Assert](#github-als-remote-repository---von-felix-andreas-assert)
+  - [Best-Practices - von Weiting Zhou](#best-practices---von-weiting-zhou)
+    - [Wann sollte man commiten? - von Weiting Zhou](#wann-sollte-man-commiten---von-weiting-zhou)
+    - [Wann und wofür sollten neue Branches erstellt werden? - von Weiting Zhou](#wann-und-wofür-sollten-neue-branches-erstellt-werden---von-weiting-zhou)
+    - [Wann sollte gepusht und gemergt werden? - von Weiting Zhou](#wann-sollte-gepusht-und-gemergt-werden---von-weiting-zhou)
+    - [Wie arbeitet man mit dem main/master branch? - von Weiting Zhou](#wie-arbeitet-man-mit-dem-mainmaster-branch---von-weiting-zhou)
+  - [Git Befehle - von Bardia Azmoun](#git-befehle---von-bardia-azmoun)
+    - [Lokales Repository](#lokales-repository)
+      - [git init](#git-init)
+      - [git add](#git-add)
+      - [git commit](#git-commit)
+      - [git status](#git-status)
+    - [Remote Repository](#remote-repository)
+      - [git fetch](#git-fetch)
+      - [git push](#git-push)
+      - [git pull](#git-pull)
+      - [git clone](#git-clone)
+      - [git remote](#git-remote)
+
 
 ## Was sind Git und GitHub und wofür werden die Systeme verwendet?
 
@@ -33,21 +65,29 @@ versteckten .git-Datei gekennzeichnet.
 ## Wie funktioniert Git? (Alternative Beschreibung) - von Paul von Napolski
 > Um Git zu benutzen, muss zuerst ein sogenanntes *Repository* mit dem Befehl ```git init [Name]```angelegt werden. Dieser Befehl *merkiert* einen Ordner sozusagen als Git-Repository, durch das erstellen eines Ordners *.git/*. Dieser Ordner enthält alle für Git relevanten Dateien, wie z.B. *refs/* (siehe [Remote Branches](#remote-branches---von-paul-von-napolski)). In jedem Git Repository gibt es drei Bereiche - den *Working Tree*, die *Staging Area* und das *Repository*.
 > 
-> Der **Working Tree** ist der Bereich, in dem gearbeitet wird. Er enthält alle Dateien in ihrem aktuellen ZUstand. Änderungen im Working Tree können *gestaged* werden, um sie dann zu *commiten*. Dadurch werden sie dem Repository hinzugefügt.
+> Der **Working Tree** ist der Bereich, in dem gearbeitet wird. Er enthält alle Dateien in ihrem aktuellen Zustand. Änderungen im Working Tree können *gestaged* werden, um sie dann zu *commiten*. Dadurch werden sie dem Repository hinzugefügt.
 > 
 > Die **Staging Area** enthält alle *gestageten* Änderungen, dass Änderungen, die markiert wurden, um sie später zu commiten.
 > 
 > Das **Repository** enthält alle bereits committeten Änderungen. Diese werden jeweils als eigenständige [*Commits*](#commits) gespeichert, die jeweils nur ihre entsprechenden Änderungen enthalten.
 
+> 06.03.2024
 
-### Commits - von Patrick Scheuer
+### Commits - von Paul von Napolski
+> Commits sind sozusagen gespeicherte *Zustände* oder *Versionen* des Repositorys. Sie enthalten alle gespeicherten Änderungen, basierend auf ihrem jeweiligen *Vorgänger-Commit*. Das heißt, wenn z.B. die Datei README<span>.md</span> geändert wird, und diese Änderung dann gespeichert - *committet* - wird, dann enthält dieser Commit alle Änderungen an der Datei README<span>.md</span> seit dem letzten Commit. Zusätzlich verweist jeder Commit auf seine jeweiligen Vorgänger-Commits. Meistens hat ein Commit genau einen Vorgänger, [*Merge-Commits*](#merging) beispielsweise können jedoch auch mehrere Vorgänger haben. Des weiteren dient jeder Commit auch als [Wiederherstellungspunkt](#commits-als-wiederherstellungspunkte). Das heißt, dass Branches und HEAD jederzeit auf den Stand eines bestimmten Commits zurückgesetzt werden können.
+
+
+### Commits (Alternative Beschreibung) - von Patrick Scheuer
 > Commits können als Snapshots oder Checkpoints deines Projektes angesehen werden. Es ist grob gesagt eine Version in deinem Repository, also eine Kopie über die zum Zeitpunkt aufgenommene Dateien im Projekt. Man kann es auch als Fortschritte sehen, welche in einem Projekt erzielt und aufgezeichnet wurden. Auf diese kann man auch immer zugreifen, indem man mit "git checkout" zu dem jeweilien Commit auscheckt.
 
 > 11.03.2024
 
-### Branches und HEAD
 
 ### Branches und HEAD
+
+### Merge und Rebase
+
+### Commits als Wiederherstellungspunkte
 
 ## Was sind Remote-Repositoris und wie funktionieren sie? - von Paul von Napolski
 > Remote Repositories sind andere Versionen des eigenen Repositories, die sich an einem anderen Ort befinden. Das kannn einfach ein anderer Ordner auf demselben Gerät sein, meistens wird man Remote Repositories jedoch auf anderen Geräten, häufig auch einem dedizierten Server, antreffen.
@@ -55,7 +95,9 @@ versteckten .git-Datei gekennzeichnet.
 > 04.03.2024
 
 ### Remote Branches - von Paul von Napolski
-> Ein Remote Branch ist im Grunde erstmal nichts weiteres, als ein Branch in einem Remote Repository. Wenn das lokale Repository mit einem Remote Repository verbunden ist, speichert Git *Referenzen*, in diesem Fall Links, in dem Ordner *'refs/'*. Um den Remote Branch jetzt meit einem lokalen Branch zu verbinden, wird der Befehl ```git --set-upstream [RemoteRepoName] [RemoteBranchName]```. Wenn ein Remote Branch auf diese Weise mit einem lokalen Branch verbunden ist, wird als *Upstream Branch* bezeichnet.
+> Ein Remote Branch ist im Grunde erstmal nichts weiteres, als ein Branch in einem Remote Repository. Wenn das lokale Repository mit einem Remote Repository verbunden ist, speichert Git *Referenzen*, in diesem Fall Links, in dem Ordner *'refs/'*. Um den Remote Branch jetzt meit einem lokalen Branch zu verbinden, wird der Befehl: 
+>> ```git --set-upstream [RemoteRepoName] [RemoteBranchName]``` 
+> Wenn ein Remote Branch auf diese Weise mit einem lokalen Branch verbunden ist, wird als *Upstream Branch* bezeichnet.
 
 > 04.03.2024
 
@@ -63,7 +105,7 @@ versteckten .git-Datei gekennzeichnet.
 
 ### GitHub als Remote Repository - Von Felix Andreas Assert
 
-> GitHub ist ein Online-Service, welcher für Personen oder Gruppierungen Remote Repositorys über ihre eigenen Server zu verfügung stellt. Die GitHub Server sind innerhalb des Netzwerkes addressierbar, was Menschen - zum größtenteil Entwicklern - die Möglichkeit bietet ihre Lokalen Repositories ins Internet zu bringen und als Remote Repository zu benutzen.
+> Die GitHub-Server sind innerhalb des Internets addressierbar, was Menschen - zum größtenteil Entwicklern - die Möglichkeit bietet Lokale Repositories hochzuladen und als Remote Repository zu benutzen.
 
 > Änderungen vom 4. März, 2024
 
@@ -114,7 +156,7 @@ versteckten .git-Datei gekennzeichnet.
 
 > 04.03.2024
 
-### Remote Repositories
+### Remote Repository
 
 #### git fetch
 > Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.

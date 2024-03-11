@@ -87,7 +87,13 @@ versteckten .git-Datei gekennzeichnet.
 
 > Branches und Head lässt sich erstmal einfacher erklären, wenn wir uns Git wie eine Zeitmachine vorstellen. Master ist gewöhnlich die "Haupt-Timeline" und somit der Standard-Branch. Wenn wir nun allerdings etwas verändern möchten, was für diese Timeline (zumindest erstmal) nicht vorgesehen ist, erstellen wir einen neuen Branch. Es ist in diesem Fall ein neuer Entwicklungszweig, beispielweise für ein Feature, Experimente oder sonstige Änderungen, die unseren Standard-Branch nicht betreffen dürfen. Diese verschiedenen Zweige kann man auch zusammenführen, aber dazu mehr bei "Merge und Rebase". Doch was ist nun der HEAD? Der HEAD dient ganz einfach als Zeiger, welcher uns sagt, auf welchem Branch wir uns befinden. Es ist also der Ort, zu welchem wir "auschecken" und auf welchem wir uns aktuell befinden. Ein Beispiel: Du befindest dich im Branch master - der HEAD ist auf master. Wenn du nun auf den Branch "Test" auscheckst, ist ebenfalls der HEAD auf "Test". Man kann auch auf vorherige Commits auschecken, wodurch der HEAD sich ebenfalls auf diesem Commit befindet. Allerdings ist der HEAD in diesem Fall auf keinem Branch, sondern nur dem einzelnen Commit. Man nennt dies auch "detached HEAD".
 
-### Merge und Rebase
+> 11.03.2024
+
+### Merge und Rebase - von Patrick Scheuer
+
+> Wie bereits bei "Branches und HEAD" erwähnt, kann man zwei Branches auch zusammenführen. Dies ist nützlich, wenn man beispielweise ein Feature, welches sich auf einem anderen Branch befindet, zu dem Master-Branch hinzufügen möchte. Hierbei gibt es mehrere Methoden/Befehle, um dies zu erreichen, aber Merge und Rebase sind die Gängisten. Zunächst schauen wir uns Merging an: Mit dem Befehl "git merge <branch>" wird ein sogenannter "Merge-Commit" in dem Branch erstellt, von welchem du mergen möchtest. Dieser vereint den Verlauf beider Branches und somit wird die Historie nicht umgeschrieben oder verändert. Dies kann allerdings, besonders bei Teamarbeit, schnell unübersichtlich werden, da für jedes Mergen ein neuer Commit erstellt wird. Rebase erledigt dies anders. Mit dem Befehl "git rebase <branch>" werden ebenso beide Branches zusammengefasst, allerdings wird hierbei die Historie des Branches, von welchem ge-rebased wird, an die Spitze des anderen Branches verschoben. Beispielweise befinden sich somit alle Commits bzw. Kopien der Commits des Test-Branches vorne im Master-Branch. Dies sorgt dafür, dass die Historie umgeschrieben wird und es einen linearen Verlauf gibt. Dies hat allerdings ohne einen extra Commit wie beim Merging den Nachteil, dass Änderungen nicht mehr nachvollziehbar werden können. Daher sollte man sich gut überlegen, welchen der Methoden man benutzt.
+
+> 11.03.2024
 
 ### Commits als Wiederherstellungspunkte
 

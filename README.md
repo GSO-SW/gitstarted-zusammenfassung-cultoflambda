@@ -83,7 +83,9 @@ versteckten .git-Datei gekennzeichnet.
 > 11.03.2024
 
 
-### Branches und HEAD
+### Branches und HEAD - von Patrick Scheuer
+
+> Branches und Head lässt sich erstmal einfacher erklären, wenn wir uns Git wie eine Zeitmachine vorstellen. Master ist gewöhnlich die "Haupt-Timeline" und somit der Standard-Branch. Wenn wir nun allerdings etwas verändern möchten, was für diese Timeline (zumindest erstmal) nicht vorgesehen ist, erstellen wir einen neuen Branch. Es ist in diesem Fall ein neuer Entwicklungszweig, beispielweise für ein Feature, Experimente oder sonstige Änderungen, die unseren Standard-Branch nicht betreffen dürfen. Diese verschiedenen Zweige kann man auch zusammenführen, aber dazu mehr bei "Merge und Rebase". Doch was ist nun der HEAD? Der HEAD dient ganz einfach als Zeiger, welcher uns sagt, auf welchem Branch wir uns befinden. Es ist also der Ort, zu welchem wir "auschecken" und auf welchem wir uns aktuell befinden. Ein Beispiel: Du befindest dich im Branch master - der HEAD ist auf master. Wenn du nun auf den Branch "Test" auscheckst, ist ebenfalls der HEAD auf "Test". Man kann auch auf vorherige Commits auschecken, wodurch der HEAD sich ebenfalls auf diesem Commit befindet. Allerdings ist der HEAD in diesem Fall auf keinem Branch, sondern nur dem einzelnen Commit. Man nennt dies auch "detached HEAD".
 
 ### Merge und Rebase
 

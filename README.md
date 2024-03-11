@@ -195,3 +195,46 @@ versteckten .git-Datei gekennzeichnet.
 #### git remote
 > 
 
+## Weitere Git Befehle - von Patrick Scheuer
+
+#### git branch
+> Erstellt einen neuen Branch oder lässt alle Branches des Repositories anzeigen.
+
+> 11.03.2024
+
+#### git checkout
+> Navigation zwischen den verschiedenen Branches. Man kann zu einem anderen Branch wechseln/auschecken oder auch zu bestimmten Commits.
+
+> 11.03.2024
+
+#### git log
+> Dient als Übersicht zu allen bisherigen Commits in chronologischer Reihenfolge und den dazugehörigen Hashwerten.
+
+> 11.03.2024
+
+#### git merge
+> Zusammenfügen zweier oder mehrerer Branches. Die Historie bleibt unverändert und es wird ein Merge-Commit erstellt.
+
+> 11.03.2024
+
+#### git rebase
+> Zusammenfügen zweier Branches. Die Historie wird verändert, indem die Commits des einen Branches an die Spitze des anderen Branches gesetzt werden. Es wird kein extra Commit erstellt.
+
+> 11.03.2024
+
+#### git reset --soft --mixed --hard
+> Setzt den Verlauf des Projekts auf einen bestimmten Zeitpunkt zurück. Dabei wird der entsprechende Commit mit dessen Hashwert angegeben, auf welchen zurückgesetzt werden soll.
+> --soft: Alle Änderungen bleiben erhalten; nützlich, wenn man nur die Commit-Nachricht ändern möchte.
+>--mixed: Standard-Parameter; Änderungen werden aus der Staging Area entnommen, das Index wurde zurückgesetzt.
+>--hard: Alle Änderungen werden unwiderruflich gelöscht.
+
+> 11.03.2024
+
+#### git status
+> Gibt den Status des Working Directories an. Es werden Änderungen in der Staging Area angezeigt und Dateien, welche noch nicht getrackt wurden.
+
+> 11.03.2024
+
+
+
+

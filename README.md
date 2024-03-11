@@ -1,6 +1,38 @@
 # Richtiges Arbeiten mit Git und GitHub
 
 ## Inhalt
+  - [Was sind Git und GitHub und wofür werden die Systeme verwendet?](#was-sind-git-und-github-und-wofür-werden-die-systeme-verwendet)
+    - [Versionskontrollsysteme - von Paul von Napolski](#versionskontrollsysteme---von-paul-von-napolski)
+      - [Git - von Paul von Napolski](#git---von-paul-von-napolski)
+    - [GitHub - Von Felix Andreas Assert](#github---von-felix-andreas-assert)
+  - [Wie funktioniert Git? - von Patrick Scheuer](#wie-funktioniert-git---von-patrick-scheuer)
+  - [Wie funktioniert Git? (Alternative Beschreibung) - von Paul von Napolski](#wie-funktioniert-git-alternative-beschreibung---von-paul-von-napolski)
+    - [Commits - von Paul von Napolski](#commits---von-paul-von-napolski)
+    - [Branches und HEAD](#branches-und-head)
+    - [Merge und Rebase](#merge-und-rebase)
+    - [Commits als Wiederherstellungspunkte](#commits-als-wiederherstellungspunkte)
+  - [Was sind Remote-Repositoris und wie funktionieren sie? - von Paul von Napolski](#was-sind-remote-repositoris-und-wie-funktionieren-sie---von-paul-von-napolski)
+    - [Remote Branches - von Paul von Napolski](#remote-branches---von-paul-von-napolski)
+    - [Origin](#origin)
+    - [GitHub als Remote Repository - Von Felix Andreas Assert](#github-als-remote-repository---von-felix-andreas-assert)
+  - [Best-Practices - von Weiting Zhou](#best-practices---von-weiting-zhou)
+    - [Wann sollte man commiten? - von Weiting Zhou](#wann-sollte-man-commiten---von-weiting-zhou)
+    - [Wann und wofür sollten neue Branches erstellt werden? - von Weiting Zhou](#wann-und-wofür-sollten-neue-branches-erstellt-werden---von-weiting-zhou)
+    - [Wann sollte gepusht und gemergt werden? - von Weiting Zhou](#wann-sollte-gepusht-und-gemergt-werden---von-weiting-zhou)
+    - [Wie arbeitet man mit dem main/master branch? - von Weiting Zhou](#wie-arbeitet-man-mit-dem-mainmaster-branch---von-weiting-zhou)
+  - [Git Befehle - von Bardia Azmoun](#git-befehle---von-bardia-azmoun)
+    - [Lokales Repository](#lokales-repository)
+      - [git init](#git-init)
+      - [git add](#git-add)
+      - [git commit](#git-commit)
+      - [git status](#git-status)
+    - [Remote Repository](#remote-repository)
+      - [git fetch](#git-fetch)
+      - [git push](#git-push)
+      - [git pull](#git-pull)
+      - [git clone](#git-clone)
+      - [git remote](#git-remote)
+
 
 ## Was sind Git und GitHub und wofür werden die Systeme verwendet?
 
@@ -58,7 +90,9 @@ versteckten .git-Datei gekennzeichnet.
 > 04.03.2024
 
 ### Remote Branches - von Paul von Napolski
-> Ein Remote Branch ist im Grunde erstmal nichts weiteres, als ein Branch in einem Remote Repository. Wenn das lokale Repository mit einem Remote Repository verbunden ist, speichert Git *Referenzen*, in diesem Fall Links, in dem Ordner *'refs/'*. Um den Remote Branch jetzt meit einem lokalen Branch zu verbinden, wird der Befehl ```git --set-upstream [RemoteRepoName] [RemoteBranchName]```. Wenn ein Remote Branch auf diese Weise mit einem lokalen Branch verbunden ist, wird als *Upstream Branch* bezeichnet.
+> Ein Remote Branch ist im Grunde erstmal nichts weiteres, als ein Branch in einem Remote Repository. Wenn das lokale Repository mit einem Remote Repository verbunden ist, speichert Git *Referenzen*, in diesem Fall Links, in dem Ordner *'refs/'*. Um den Remote Branch jetzt meit einem lokalen Branch zu verbinden, wird der Befehl: 
+>> ```git --set-upstream [RemoteRepoName] [RemoteBranchName]``` 
+> Wenn ein Remote Branch auf diese Weise mit einem lokalen Branch verbunden ist, wird als *Upstream Branch* bezeichnet.
 
 > 04.03.2024
 
@@ -66,7 +100,7 @@ versteckten .git-Datei gekennzeichnet.
 
 ### GitHub als Remote Repository - Von Felix Andreas Assert
 
-> GitHub ist ein Online-Service, welcher für Personen oder Gruppierungen Remote Repositorys über ihre eigenen Server zu verfügung stellt. Die GitHub Server sind innerhalb des Netzwerkes addressierbar, was Menschen - zum größtenteil Entwicklern - die Möglichkeit bietet ihre Lokalen Repositories ins Internet zu bringen und als Remote Repository zu benutzen.
+> Die GitHub-Server sind innerhalb des Internets addressierbar, was Menschen - zum größtenteil Entwicklern - die Möglichkeit bietet Lokale Repositories hochzuladen und als Remote Repository zu benutzen.
 
 > Änderungen vom 4. März, 2024
 
@@ -117,7 +151,7 @@ versteckten .git-Datei gekennzeichnet.
 
 > 04.03.2024
 
-### Remote Repositories
+### Remote Repository
 
 #### git fetch
 > Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.

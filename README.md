@@ -16,7 +16,7 @@
     - [Commits als Wiederherstellungspunkte](#commits-als-wiederherstellungspunkte)
   - [Was sind Remote-Repositoris und wie funktionieren sie?](#was-sind-remote-repositoris-und-wie-funktionieren-sie)
     - [Remote Branches](#remote-branches)
-    - [Origin - von Patrick Scheuer](#origin---von-patrick-scheuer)
+    - [Origin](#origin)
     - [GitHub als Remote Repository](#github-als-remote-repository)
   - [Best-Practices](#best-practices)
     - [Wann sollte man commiten?](#wann-sollte-man-commiten)
@@ -130,7 +130,7 @@ versteckten .git-Datei gekennzeichnet.
 
 > Letzte Änderungen vom 4. März, 2024 - Paul von Napolski
 
-### Origin - von Patrick Scheuer
+### Origin
 > Die Origin beschreibt den Namen für ein remote Repository, welches ein dazugehöriges lokales Repository hat, aus welchem geklont wurde. Ebenso haben die Branches eigene Origins im remote Repository, welche auf das Lokale zurückgreifen. Beispielweise ist o/master der remote Branch vom lokalen Branch "master". Das "o" steht dbei für "origin".
 
 > Letzte Änderungen vom 11. März, 2024 - Patrick Scheuer

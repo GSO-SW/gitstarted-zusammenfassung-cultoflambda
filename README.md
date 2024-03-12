@@ -150,50 +150,84 @@ versteckten .git-Datei gekennzeichnet.
 
 ## Git Befehle - von Bardia Azmoun
 
-### Lokales Repository
+### Lokales Repository - von Bardia Azmoun
 
-#### git init
+#### git init - von Bardia Azmoun
 > Initialisiert ein neues Git-Repository.
 
 > 04.03.2024
 
-#### git add
+#### git add - von Bardia Azmoun
 > Verschiebt Änderungen aus dem Arbeitsverzeichnis in die Staging-Area, bevor man sie in den offiziellen Verlauf committet.
 
 > 28.02.2024
 
-#### git commit
-> 
+#### git commit -m "..." von Bardia Azmoun
+>  Speichert den aktuellen Zustand des Staging-Bereichs im Repository mit einer beschreibenden Nachricht.
 
-#### git status
+> 11.03.2024
+
+#### git status - von Bardia Azmoun
 > Gibt den Status des Arbeitsverzeichnisses und der Staging-Area zurück.
 
 > 04.03.2024
 
-### Remote Repository
+### Remote Repositories - von Bardia Azmoun
 
-#### git fetch
+#### git fetch - von Bardia Azmoun
 > Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.
 
 > 04.03.2024
 
-#### git push
+#### git push - von Bardia Azmoun
 > Mit diesem Befehl kann man einen lokalen Branch in ein anderes Repository verschieben.
 
 > 04.03.2024
 
-#### git pull
+#### git pull - von Bardia Azmoun
 > Pulls sind die automatisierte Version von git fetch. Dabei wird ein Branch von einem Remote-Repository heruntergeladen und dann direkt in den aktuellen Branch gemergt.
 
 > 04.03.2024
 
-#### git clone
+#### git clone - von Bardia Azmoun
 > Erstellt eine Kopie eines bestehenden Git-Repositorys.
 
 > 04.03.2024
 
-#### git remote
-> 
+#### git remote - von Bardia Azmoun
+> Ermöglicht mit entfernten Repositorys zu interagieren.
+
+> 11.03.2024
+
+#### git remote -v - von Bardia Azmoun
+> Zeigt die Liste der entfernten Repositorys an, die mit deinem lokalen Repository verknüpft sind, sowie deren URLs.
+
+> 11.03.2024
+
+#### git remote add (Name) - von Bardia Azmoun
+> Fügt ein neues entferntes Repository hinzu, das du verfolgen möchtest.
+
+> 11.03.2024
+
+#### git remote rm (Name) - von Bardia Azmoun
+> Entfernt das entfernte Repository mit dem angegebenen Namen aus der Liste der verfolgten entfernten Repositorys.
+
+> 11.03.2024
+
+#### git remote rename (Alter Name) (Neuer Name) - von Bardia Azmoun
+> Benennt ein entferntes Repository um.
+
+> 11.03.2024
+
+#### git revert - von Bardia Azmoun
+> Macht einen Commit rückgängig, indem ein neuer Commit erstellt wird, der die Änderungen des vorherigen Commits aufhebt.
+
+> 11.03.2024
+
+#### git cherry-pick - von Bardia Azmoun
+> Übernimmt die Änderungen eines bestimmten Commits und fügt sie dem aktuellen Branch hinzu.
+
+> 11.03.2024
 
 ## Weitere Git Befehle - von Patrick Scheuer
 
@@ -234,7 +268,3 @@ versteckten .git-Datei gekennzeichnet.
 > Gibt den Status des Working Directories an. Es werden Änderungen in der Staging Area angezeigt und Dateien, welche noch nicht getrackt wurden.
 
 > 11.03.2024
-
-
-
-

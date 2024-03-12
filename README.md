@@ -1,6 +1,8 @@
 # Richtiges Arbeiten mit Git und GitHub
 
 ## Inhalt
+- [Richtiges Arbeiten mit Git und GitHub](#richtiges-arbeiten-mit-git-und-github)
+  - [Inhalt](#inhalt)
   - [Was sind Git und GitHub und wofür werden die Systeme verwendet?](#was-sind-git-und-github-und-wofür-werden-die-systeme-verwendet)
     - [Versionskontrollsysteme](#versionskontrollsysteme)
       - [Git](#git)
@@ -8,7 +10,7 @@
   - [Wie funktioniert Git?](#wie-funktioniert-git)
   - [Wie funktioniert Git? (Alternative Beschreibung)](#wie-funktioniert-git-alternative-beschreibung)
     - [Commits](#commits)
-    - [Commits (Alternative Beschreibung) - von Patrick Scheuer](#commits-alternative-beschreibung---von-patrick-scheuer)
+    - [Commits (Alternative Beschreibung)](#commits-alternative-beschreibung)
     - [Branches und HEAD](#branches-und-head)
     - [Merge und Rebase](#merge-und-rebase)
     - [Commits als Wiederherstellungspunkte](#commits-als-wiederherstellungspunkte)
@@ -25,15 +27,20 @@
     - [Lokales Repository](#lokales-repository)
       - [git init](#git-init)
       - [git add](#git-add)
-      - [git commit](#git-commit)
+      - [git commit -m "..."](#git-commit--m-)
       - [git status](#git-status)
-    - [Remote Repository](#remote-repository)
+    - [Remote Repositories](#remote-repositories)
       - [git fetch](#git-fetch)
       - [git push](#git-push)
       - [git pull](#git-pull)
       - [git clone](#git-clone)
       - [git remote](#git-remote)
-  - [Weitere Git Befehle](#weitere-git-befehle)
+      - [git remote -v](#git-remote--v)
+      - [git remote add (Name)](#git-remote-add-name)
+      - [git remote rm (Name)](#git-remote-rm-name)
+      - [git remote rename (Alter Name) (Neuer Name)](#git-remote-rename-alter-name-neuer-name)
+      - [git revert](#git-revert)
+      - [git cherry-pick](#git-cherry-pick)
       - [git branch](#git-branch)
       - [git checkout](#git-checkout)
       - [git log](#git-log)
@@ -86,12 +93,12 @@ versteckten .git-Datei gekennzeichnet.
 ### Commits
 > Commits sind sozusagen gespeicherte *Zustände* oder *Versionen* des Repositorys. Sie enthalten alle gespeicherten Änderungen, basierend auf ihrem jeweiligen *Vorgänger-Commit*. Das heißt, wenn z.B. die Datei README<span>.md</span> geändert wird, und diese Änderung dann gespeichert - *committet* - wird, dann enthält dieser Commit alle Änderungen an der Datei README<span>.md</span> seit dem letzten Commit. Zusätzlich verweist jeder Commit auf seine jeweiligen Vorgänger-Commits. Meistens hat ein Commit genau einen Vorgänger, [*Merge-Commits*](#merging) beispielsweise können jedoch auch mehrere Vorgänger haben. Des weiteren dient jeder Commit auch als [Wiederherstellungspunkt](#commits-als-wiederherstellungspunkte). Das heißt, dass Branches und HEAD jederzeit auf den Stand eines bestimmten Commits zurückgesetzt werden können.
 
-> Letzte Änderungen vom 11. März, 2024
+> Letzte Änderungen vom 11. März, 2024 - Paul von Napolski
 
-### Commits (Alternative Beschreibung) - von Patrick Scheuer
+### Commits (Alternative Beschreibung)
 > Commits können als Snapshots oder Checkpoints deines Projektes angesehen werden. Es ist grob gesagt eine Version in deinem Repository, also eine Kopie über die zum Zeitpunkt aufgenommene Dateien im Projekt. Man kann es auch als Fortschritte sehen, welche in einem Projekt erzielt und aufgezeichnet wurden. Auf diese kann man auch immer zugreifen, indem man mit "git checkout" zu dem jeweilien Commit auscheckt.
 
-> Letzte Änderungen vom 11. März, 2024 - Paul von Napolski
+> Letzte Änderungen vom 11. März, 2024 - Patrick Scheuer
 
 
 ### Branches und HEAD
@@ -161,7 +168,7 @@ versteckten .git-Datei gekennzeichnet.
 
 ## Git Befehle
 
-### Lokales Repository
+### Lokales Repository 
 
 #### git init
 > Initialisiert ein neues Git-Repository.
@@ -173,17 +180,19 @@ versteckten .git-Datei gekennzeichnet.
 
 > Letzte Änderungen vom 28. Feburar, 2024 - Bardia Azmoun
 
-#### git commit
-> 
+#### git commit -m "..." 
+>  Speichert den aktuellen Zustand des Staging-Bereichs im Repository mit einer beschreibenden Nachricht.
 
-#### git status
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git status 
 > Gibt den Status des Arbeitsverzeichnisses und der Staging-Area zurück.
 
 > Letzte Änderungen vom 4. März, 2024 - Bardia Azmoun
 
-### Remote Repository
+### Remote Repositories 
 
-#### git fetch
+#### git fetch 
 > Ein Branch von einem anderen Repository wird zusammen mit allen zugehörigen Commits und Dateien heruntergeladen. Dabei wird jedoch nichts in dein lokales Repository integriert. Auf diese Weise hast du die Möglichkeit, Änderungen vor dem Merge in dein Projekt noch zu überprüfen.
 
 > Letzte Änderungen vom 4. März, 2024 - Bardia Azmoun
@@ -204,9 +213,39 @@ versteckten .git-Datei gekennzeichnet.
 > Letzte Änderungen vom 4. März, 2024 - Bardia Azmoun
 
 #### git remote
-> 
+> Ermöglicht mit entfernten Repositorys zu interagieren.
 
-## Weitere Git Befehle
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git remote -v
+> Zeigt die Liste der entfernten Repositorys an, die mit deinem lokalen Repository verknüpft sind, sowie deren URLs.
+
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git remote add (Name)
+> Fügt ein neues entferntes Repository hinzu, das du verfolgen möchtest.
+
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git remote rm (Name)
+> Entfernt das entfernte Repository mit dem angegebenen Namen aus der Liste der verfolgten entfernten Repositorys.
+
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git remote rename (Alter Name) (Neuer Name)
+> Benennt ein entferntes Repository um.
+
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git revert
+> Macht einen Commit rückgängig, indem ein neuer Commit erstellt wird, der die Änderungen des vorherigen Commits aufhebt.
+
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
+
+#### git cherry-pick
+> Übernimmt die Änderungen eines bestimmten Commits und fügt sie dem aktuellen Branch hinzu.
+
+> Letzte Änderungen vom 11. März, 2024 - Bardia Azmoun
 
 #### git branch
 > Erstellt einen neuen Branch oder lässt alle Branches des Repositories anzeigen.
